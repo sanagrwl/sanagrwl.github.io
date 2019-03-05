@@ -1,0 +1,9 @@
+.caption, .postscript {
+    color: #9a9a9a;
+    font-size: .9rem;
+}
+
+.caption {
+    text-align: center;
+    font-style: italic;
+}
