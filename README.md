@@ -1,4 +1,4 @@
-My dev blog - https://sanagrwl.github.io/ 
+My dev blog - https://digitalcarpenter.dev/
 
 Powered by: 
 - [Poole](https://github.com/poole/poole)
