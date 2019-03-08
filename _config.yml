@@ -7,13 +7,13 @@ permalink:           pretty
 title:               Sandeep Aggarwal
 tagline:             'A Digital Carpenter'
 description:         Premature optimzation is the root of all evil. Here lies my premature optimized thoughts.
-url:                 https://sanagrwl.github.io/
+url:                 https://digitalcarpenter.dev
 paginate:            5
 
 # About/contact
 author:
   name:              Sandeep Aggarwal
-  url:               https://sanagrwl.github.io/
+  url:               https://digitalcarpenter.dev
 
 # Custom vars
 version:             1.0.0
