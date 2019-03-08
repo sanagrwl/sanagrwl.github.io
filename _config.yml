@@ -3,7 +3,7 @@ name: 'Digital Carpenter'
 # description: 'Horace is a simple Jekyll theme for writers and bloggers. Explore it yourself.'
 # meta_description: 'Jekyll template, minimal style, perfect for bloggers.'
 logo: 'assets/images/logo.png'
-favicon: 'assets/images/favicon.ico'
+favicon: 'assets/images/favicon.png'
 baseurl: 
 production_url: https://digitalcarpenter.dev/
 # disqus: 'justgoodthemes'
