@@ -258,7 +258,7 @@
   margin: 0.71428em 0;
 }
 
-.caption-text {
+.caption-text, .caption-text-link {
   color: $gray;
   font-size: 16px;
   font-style: italic;
@@ -266,6 +266,10 @@
   margin-bottom: 1.66667em;
   padding-top: 1%;
   text-align: center; 
+}
+
+.caption-text-link {
+  color: $color-accent;
 }
 
 /* Featured Posts */

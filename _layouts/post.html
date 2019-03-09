@@ -17,8 +17,8 @@ post_class: post-template
             {% if page.featured_image %}
             <div class="post-thumbnail"><img class="featured-image img-fluid" src="{{ site.baseurl }}{{ page.featured_image }}"
                     alt="{{ page.title }}">
-                {% if page.featured_image_source_url %}
-                <a href="{{ page.featured_image_source_url }}"><figcaption class="caption-text">Image Source</figcaption></a>
+                {% if page.featured_image_source %}
+                <figcaption class="caption-text">Image Source: <a href="{{ page.featured_image_source.url }}" target="_blank">{{ page.featured_image_source.name }}</a></figcaption>
                 {% endif %}
             </div>
             {% endif %}

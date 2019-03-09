@@ -13,8 +13,8 @@
             <a href="{{ post.url | absolute_url }}">
                 <img src="{{ post.featured_image | prepend: site.baseurl }}" alt="{% if post.featured_image_alt %}{{ post.featured_image_alt }}{% else %}{{ post.title }}{% endif %}">
             </a>
-            {% if post.featured_image_source_url %}
-            <a href="{{ post.featured_image_source_url }}"><figcaption class="caption-text">Image Source</figcaption></a>
+            {% if post.featured_image_source %}
+            <figcaption class="caption-text">Image Source: <a href="{{ post.featured_image_source.url }}" target="_blank">{{ post.featured_image_source.name }}</a></figcaption>
             {% endif %}
         </div>
     {% endif %}
