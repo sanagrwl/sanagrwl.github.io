@@ -16,7 +16,11 @@ post_class: post-template
             </header><!-- .post-header -->
             {% if page.featured_image %}
             <div class="post-thumbnail"><img class="featured-image img-fluid" src="{{ site.baseurl }}{{ page.featured_image }}"
-                    alt="{{ page.title }}"></div>
+                    alt="{{ page.title }}">
+                {% if page.featured_image_source_url %}
+                <a href="{{ page.featured_image_source_url }}"><figcaption class="caption-text">Image Source</figcaption></a>
+                {% endif %}
+            </div>
             {% endif %}
             <div class="post-content">
                 {{content}}
