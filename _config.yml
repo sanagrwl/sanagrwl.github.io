@@ -61,6 +61,10 @@ paginate_path: /page:num/
 # Permalinks
 permalink: /:title
 
+tag_archive:
+  type: liquid
+  path: /tag/
+
 # Other
 markdown: kramdown
 
