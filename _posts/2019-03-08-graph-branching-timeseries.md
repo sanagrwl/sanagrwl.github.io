@@ -42,7 +42,7 @@ Lets create some categories, products and build a tree
 
 1. query line 1 explanation 
 2.
-3. Ignore the **branch** property for now. I'll cover that in branching section.
+3. Ignore the **branch** property for now. I'll cover that in branching section
 
 Result:
 // add graph database screenshot to show relationships
