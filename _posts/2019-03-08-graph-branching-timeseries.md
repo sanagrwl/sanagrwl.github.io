@@ -26,15 +26,28 @@ Given, not every user will create a workspace, but a system cannot assume so. Ne
 Options on table:
 - Copy data for every workspace - Hell no!!
 - Git as a database - Hmm, can solve merge problems, but has a lot of other problems!!
-- Relational database - Doable, but maintaing relationships in tree will not be simple
+- Relational database - Doable, but maintaing relationships in tree will not be simple, don't have to use it as pure relational database either.
 - Document store - In itself won't be enough.
 - Graph database - Lets talk.
 
 #### Timeseries in Graph database
 
+The basis of this model is to maintain all relationships. Never delete, instead expire. There are several ways of doing this, but in this example, I am going to use relationship properties. I am using Neo4j to spike this out.
+
+Lets create some categories, products and build a tree
+
 ```
 // Add Cypher Query to create categories and products
 ```
+
+1. query line 1 explanation 
+2.
+3. Ignore the **branch** property for now. I'll cover that in branching section.
+
+Result:
+// add graph database screenshot to show relationships
+
+
 
 Explanation of above query and screenshot of graph
 
@@ -42,7 +55,13 @@ Explanation of above query and screenshot of graph
 // Add Cypher Query to fetch based on time
 ```
 
+Result:
+// add graph screenshot for result
 
+Having this model as a basis, you can now traverse the graph based on time.
+Remember:
+1. When you add a node, create a relationship whose creation time is now and expiration time is infinity.
+2. When you delete a node, only update expiration time t now for all the relationships associated with that node. Do not delete the node itself.
 
 #### Branching
 
