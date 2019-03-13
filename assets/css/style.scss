@@ -898,6 +898,7 @@
   }
 }
 @media only screen and (min-width: 601px) {
+  
   .post-content img[src$='#left'] {
     float: left;
     margin: 0.3em 30px 0.83333em 0;
@@ -949,6 +950,11 @@
     max-width: none;
     width: 94vw;
   }
+
+  .post-content img[src$='#small'] {
+    max-width: 50%;
+    margin-left: 25%;
+  }
 }
 @media only screen and (min-width: 1141px) {
   blockquote,
@@ -968,6 +974,11 @@
     margin-right: -180px;
     max-width: none;
     width: 1080px;
+  }
+
+  .post-content img[src$='#small'] {
+    max-width: 50%;
+    margin-left: 25%;
   }
 
   .outer {
@@ -1121,3 +1132,7 @@
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.highlighter-rouge {
+  background-color: aliceblue
+}
