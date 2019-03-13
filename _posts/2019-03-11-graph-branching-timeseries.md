@@ -102,9 +102,9 @@ Remember:
 
 #### Branching
 
-We added `branch` property to all our relationships.Lets say we have branch name `test-branch` created at time `T-4`. 
+We added `branch` property to all our relationships. Lets say we have branch name `test-branch` created at time `T-4`. 
 
-User added `category 6` as a child of `category 3` at T-4.
+User added `category 6` as a child of `category 3` at T-4 on `test-branch`.
 
 ```
 create (c:category {name: 'cat 6'});
@@ -114,7 +114,7 @@ where a.name = "cat 3" and b.name =  "cat 6"
 create (a)-[:has {branch: 'test-branch', from: 4, to: 2148530400000}]->(b);
 ```
 
-At `T-5`, user also added `category 7` as child of `category 3`.
+At `T-5`, user also added `category 7` as child of `category 3` on `master`.
 
 ```
 create (c:category {name: 'cat 7'});
