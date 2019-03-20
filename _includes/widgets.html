@@ -9,7 +9,6 @@
     <h2 class="widget-title">Recent Articles</h2>
     <ul>
         {% for post in site.posts limit:3 %}
-        {% if post.hidden == false or post.featured == true %}
         <li>
             <div class="post-header">
                 <div class="post-meta">
@@ -32,7 +31,6 @@
             {% else %}
             {% endif %}
         </li>
-        {% endif %}
         {% endfor %}
     </ul>
 </section>

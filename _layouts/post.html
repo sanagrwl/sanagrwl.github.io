@@ -91,9 +91,9 @@ post_class: post-template
                 {% endif %}
             </article>
             {% endif %}
-            {% if page.next.hidden == false or page.next.featured == true %}
-                {% if page.next.url %}
-                <article class="post">
+
+            {% if page.next.url %}
+            <article class="post">
                     <header class="post-header">
                         <div class="post-meta">
                             <time class="published" datetime="{{page.next.date | date: '%B %-d, %Y'}}">{{page.next.date |
@@ -124,9 +124,9 @@ post_class: post-template
                     </a>
                     {% else %}
                     {% endif %}
-                </article>
-                {% endif %}
+            </article>
             {% endif %}
+
         </section><!-- .read-next -->
     </main><!-- .site-main -->
 </div><!-- .site-content -->
