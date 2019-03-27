@@ -11,15 +11,15 @@ featured: true
 hidden: true
 ---
 <!-- https://neo4j.com/blog/graph-databases-drupal-neo4j-module-rules-integration/ -->
-Recently, I came across an interesting problem of product taxonomy. Essentially have categories, sub categories and assign products to them. Simple. However, there was a catch. 
+Recently, I came across an interesting problem of providing users their own sandbox environment to make changes in isolation, and have the ability to essentially merge them with live data. 
+
+Sounds like Git and branches?
 
 <!--more-->
 
-Users wanted their own private workspace, where they make all their changes, review it, and then make the changes live. Changes in private workspace had to be  **merged** with live changes. A workspace could live for short or go for weeks or even months, without having a need ot accept live changes. Also, there was no restriction on how many workspaces a user could have.
+Lets say, the application provides the ability to create categories, sub categories etc. They can create their own workspace, i.e branch where their changes does not affect live data, i.e master.
 
-Does it remind you of Git and branches?
-
-Before we talk about branches, lets go over timeseries first.
+Before we talk about branches, lets talk about timeseries first.
 #### Timeseries in Graph database
 
 The basis of this model is to maintain all relationships. Never delete, instead expire. There are several ways of doing this, but in this example, I am going to use relationship properties. I am using Neo4j to spike this out.
