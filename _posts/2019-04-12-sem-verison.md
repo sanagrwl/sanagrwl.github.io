@@ -29,8 +29,6 @@ Every commit is a patch unless specified.
 
 Any commit can go to production. You are making a change, and at the very least it is a patch release. 
 
-So how do tell when something is a major/minor/patch release.
-
 <strong>
 Semantic Versioning
 <strong>
