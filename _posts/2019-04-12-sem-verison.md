@@ -88,12 +88,12 @@ Lets see what `git describe` is doing"
     # output: v/1.0-2-g6031055
 ```
 
-<mark>Ensure that you have your very first commit tagged with 'v/' pattern.</mark>
-
 The above output is giving you the latest tag that matches `v/*`, number of commits since that tag `2` and the current commit, prepended with letter `g` `6031055`.
 
 The `sem_version` method simply uses this to create a semantic version, with patch number is just the number of commits. The `basename` command simply removes `v/` from the `git describe` output.
 
-This makes it easier and consistent way of automating sem versionig in your CI/CD tools. And as a human, one would only need to look at tags that matches pattern `v/*`. You can have your CI/CD tools push proper semantic versioned tags, but their will be always a clear distinction between automated vs manual tags. 
+<mark>Ensure that you have your very first commit tagged with 'v/' pattern.</mark>
+
+This makes it easier and consistent way of automating sem versionig in your CI/CD tools. And as a human, one would only need to look at tags that matches pattern `v/*`. You can have your CI/CD tools push proper semantic versioned tags, but there will be always a clear distinction between automated vs manual tags. 
 
 
