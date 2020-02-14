@@ -80,7 +80,7 @@ If the same thing was executed at commit3:
     # output: 1.0.2
 ```
 
-Lets see what `git describe` is doing"
+Lets see what `git describe` is doing.
 
 ```
     git checkout 6031055
