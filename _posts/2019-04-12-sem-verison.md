@@ -92,6 +92,6 @@ The `sem_version` method simply uses this to create a semantic version, with pat
 
 <mark>Ensure that you have your very first commit tagged with 'v/' pattern.</mark>
 
-This makes it easier and consistent way of automating sem versionig in your CI/CD tools. And as a human, one would only need to look at tags that matches pattern `v/*`. You can have your CI/CD tools push proper semantic versioned tags, but there will be always a clear distinction between automated vs manual tags. 
+This makes it easier and consistent way of automating sem versionig in your CI/CD tools. And as a human, one would only need to look at tags that matches pattern `v/*`. You can have your CI/CD tools push proper semantic versioned tags, but there will always be a clear distinction between automated vs manual tags. 
 
 
