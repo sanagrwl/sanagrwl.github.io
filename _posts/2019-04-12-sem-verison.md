@@ -15,7 +15,7 @@ Every now and then, I come across teams who have developed a custom way of versi
 <!--more-->
 
 <strong>
-I am only interested in knowing when it is a major or a minor release.
+I am only interested in knowing when it is a major or a minor change.
 <strong>
 
 
@@ -27,9 +27,9 @@ Even for a consumer of an artifact, it really doesn't matter if you released 2.1
 Every commit is a patch unless specified.
 <strong>
 
-Any commit can go to production. With that opinion, you are making a change, and at the very least it is a patch release. 
+Any commit can go to production. You are making a change, and at the very least it is a patch release. 
 
-So how do you specifiy it is not a patch release?
+So how do tell when something is a major/minor/patch release.
 
 <strong>
 Semantic Versioning
