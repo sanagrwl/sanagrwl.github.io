@@ -1134,5 +1134,7 @@
 /*# sourceMappingURL=style.css.map */
 
 .highlighter-rouge {
-  background-color: aliceblue
+  background-color: aliceblue !important;
+  color: gray-dark !important;
+  text-shadow: none !important;
 }
