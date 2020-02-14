@@ -90,7 +90,7 @@ Lets see what `git describe` is doing.
 
 The above output is giving you the latest tag that matches `v/*`, number of commits, `2`, since that tag and the current commit, `6031055`, prepended with letter `g`.
 
-The `sem_version` method simply uses this to create a semantic version, with patch number is just the number of commits. The `basename` command simply removes `v/` from the `git describe` output. You can also use the commit sha to add metadata to your semantic version. Ex: `1.0.2+6031055`. Build metadata is ingored when determining precedence anyways.
+The `sem_version` method simply uses this to create a semantic version, with patch number is just the number of commits. The `basename` command simply removes `v/` from the `git describe` output. You can also use the commit sha to add metadata to your semantic version. Ex: `1.0.2+6031055`. Build metadata is ignored when determining precedence anyways.
 
 <mark>Ensure that you have your very first commit tagged with 'v/' pattern.</mark>
 
